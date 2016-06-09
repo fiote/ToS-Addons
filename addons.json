@@ -72,5 +72,21 @@
 			"set",
 			"swap"
 		]
+	}, 
+	{
+		"name": "cxAnywhere",
+		"file": "cxanywhere",
+		"extension": "ipf",
+		"fileVersion": "v1.0.0",
+		"releaseTag": "shitstorm",
+		"unicode": "☠",
+		"description": "The source of all evil in the world.",
+		"tags": [
+			"repair",
+			"sell",
+			"market",
+			"tpshop",
+			"storage"
+		]
 	}
 ]
