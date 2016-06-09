@@ -4,7 +4,7 @@
 		"file": "cwcleric",
 		"extension": "ipf",
 		"fileVersion": "v1.0.0",
-		"releaseTag": "IPFzero",
+		"releaseTag": "rebirth",
 		"unicode": "🐻",
 		"description": "cwCleric is a class helper. It'll remind you to toggle 'Heal: Remove Damage' on/off when joining/leaving parties.",
 		"tags": [
@@ -18,7 +18,7 @@
 		"file": "cwfarmed",
 		"extension": "ipf",
 		"fileVersion": "v1.0.2",
-		"releaseTag": "cwfarmed",
+		"releaseTag": "rebirth",
 		"unicode": "🐻",
 		"description": "cwFarmed allows you to easily see what's really being farmed while you grind your way through the game.",
 		"tags": [
@@ -35,7 +35,7 @@
 		"file": "cwmarket",
 		"extension": "ipf",
 		"fileVersion": "v1.0.1",
-		"releaseTag": "acutilSlashCommand",
+		"releaseTag": "rebirth",
 		"unicode": "🐻",
 		"description": "cwMarket add 2 buttons to your cabinet window, making it possible to retrieve all items or all silver with one click.",
 		"tags": [
@@ -49,7 +49,7 @@
 		"file": "cwrepair",
 		"extension": "ipf",
 		"fileVersion": "v1.0.2",
-		"releaseTag": "cwrepair",
+		"releaseTag": "rebirth",
 		"unicode": "🐻",
 		"description": "cwRepair lets you define a durability% to consider a gear 'good' and easily repair the bads when visiting a repair shop.",
 		"tags": [
@@ -63,7 +63,7 @@
 		"file": "cwset",
 		"extension": "ipf",
 		"fileVersion": "v1.0.1",
-		"releaseTag": "acutilSlashCommand",
+		"releaseTag": "rebirth",
 		"unicode": "🐻",
 		"description": "cwSet allows you to store an infinite number of gear 'sets', so you can easily switch between them.",
 		"tags": [

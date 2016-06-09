@@ -12,23 +12,24 @@ Have any question or suggestion about the addons or the website? Hit me at http:
 
 ## Addons Available
 
-<b>[cwRepair](https://github.com/fiote/treeofsavior-addons/wiki/cwRepair):</b>
+
+<b>[cwRepair](https://github.com/fiote/ToS-Addons/wiki/cwRepair):</b>
 
 cwRepair lets you define a durability% to consider a gear "good" and easily repair the bads when visiting a repair shop.
 
-<b>[cwSet](https://github.com/fiote/treeofsavior-addons/wiki/cwSet):</b>
+<b>[cwSet](https://github.com/fiote/ToS-Addons/wiki/cwSet):</b>
 
 cwSet allows you to store an infinite number of gear 'sets', so you can easily switch between them.
 
-<b>[cwFarmed](https://github.com/fiote/treeofsavior-addons/wiki/cwFarmed):</b>
+<b>[cwFarmed](https://github.com/fiote/ToS-Addons/wiki/cwFarmed):</b>
 
 cwFarmed allows you to easily see what's really being farmed while you grind your way through the game.
 
-<b>[cwMarket](https://github.com/fiote/treeofsavior-addons/wiki/cwMarket):</b>
+<b>[cwMarket](https://github.com/fiote/ToS-Addons/wiki/cwMarket):</b>
 
 cwMarket add 2 buttons to your cabinet window, making it possible to retrieve all items or all silver with one click.
 
-<b>[cwCleric](https://github.com/fiote/treeofsavior-addons/wiki/cwCleric):</b>
+<b>[cwCleric](https://github.com/fiote/ToS-Addons/wiki/cwCleric):</b>
 
 cwCleric is a class helper. It'll remind you to toggle "Heal: Remove Damage" on/off when joining/leaving parties.
 
@@ -36,6 +37,7 @@ cwCleric is a class helper. It'll remind you to toggle "Heal: Remove Damage" on/
 
 cwAPI is my core library. All my addons depend on it so it.
 
-In time, all functions will be documented on [the wiki](https://github.com/fiote/treeofsavior-addons/wiki/cwAPI-(core-library))!
+In time, all functions will be documented on [the wiki](https://github.com/fiote/ToS-Addons/wiki/cwAPI-(core-library))!
+
 
 
