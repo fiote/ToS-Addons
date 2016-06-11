@@ -305,46 +305,10 @@ function cwAPI.attributes.toggleOn(attrID)
 end
 
 -- ======================================================
---	commands
--- ======================================================
-
-local function runScript(words)
-	local funcStr = '';
-	for key,value in pairs(words) do
-		funcStr = funcStr .. value .. ' '; 
-	end
-	loadstring(funcStr)();
-end
-
-local function reloadAddons()
-	ui.SysMsg('=====================================');
-	addonloader.run();
-end
-
-local function showAddonsButton() 
-	local addonLoaderFrame = ui.GetFrame("addonloader");
-	addonLoaderFrame:ShowWindow(1);
-end 
-
--- ======================================================
---	commands
--- ======================================================
-
-local function checkCommand(words)
-	cwAPI.util.log('====== cwAPI =====');
-	cwAPI.util.log('"/addons" will show the addons button.');
-	cwAPI.util.log('"/reload" will reload all addons.');
-	cwAPI.util.log('"/script" will let you run lua commands like a bash.');
-	cwAPI.util.log('--------------------------');
-end
-
--- ======================================================
 --	LOADER
 -- ======================================================
 
 cwAPI.events.resetAll();
-acutil.slashCommand('/addons',showAddonsButton);
-acutil.slashCommand('/reload',reloadAddons);
 return cwAPI;
 
 
