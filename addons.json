@@ -72,5 +72,18 @@
 			"set",
 			"swap"
 		]
+	}, 
+	{
+		"name": "cwShakeness",
+		"file": "cwshakeness",
+		"extension": "ipf",
+		"fileVersion": "v1.0.0",
+		"releaseTag": "shakeshake",
+		"unicode": "🐻",
+		"description": "cwShakeness allow you to disable some screen shakes, based on their intensity.",
+		"tags": [
+			"screen",
+			"shake"
+		]
 	}
 ]
