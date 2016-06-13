@@ -1,9 +1,47 @@
-local cwAPI = require("cwapi");
+local cwAPI = require('cwapi');
+local inspect = require('inspect');
 
 local cwMarket = {};
+cwMarket.pageNow = nil;
 
 local log = cwAPI.util.log;
 local alert = ui.SysMsg;
+
+-- ======================================================
+--	MARKET - PAGINATION
+-- ======================================================
+
+function cwMarket.marketFindPage(frame, page)
+	cwMarket.pageNow = page;
+end
+
+function cwMarket.pageSelectPrev(pageControl, numCtrl)
+	pageControl = tolua.cast(pageControl, "ui::CPageController");
+	local page = pageControl:GetCurPage();
+	if (cwMarket.pageNow) then page = cwMarket.pageNow; end
+	local frame = pageControl:GetTopParentFrame();
+
+	local prevPage = page-1;
+	if prevPage < 0 then prevPage = 0; end
+
+	pageControl:SetCurPage(page);
+	MARGET_FIND_PAGE(frame, prevPage);
+end
+
+
+function cwMarket.pageSelectNext(pageControl, numCtrl)
+	pageControl = tolua.cast(pageControl, "ui::CPageController");
+	local page = pageControl:GetCurPage();
+	if (cwMarket.pageNow) then page = cwMarket.pageNow; end
+	local frame = pageControl:GetTopParentFrame();	
+
+	local MaxPage = pageControl:GetMaxPage();
+	local nextPage = page+1;
+	if nextPage >= MaxPage then nextPage = MaxPage -1; end
+
+	pageControl:SetCurPage(page);
+	MARGET_FIND_PAGE(frame, nextPage);
+end
 
 -- ======================================================
 --	MARKET - CABINET
@@ -28,7 +66,6 @@ end
 function cwMarket_retrieveAllItems() 
 	cwMarket.retrieveAllType('items');
 end
-
 
 function cwMarket.createRetrieveButtons()
 	local frame = ui.GetFrame('market_cabinet');
@@ -107,7 +144,6 @@ function cwMarket.cabinetItemList()
 
 	if (counters.silver.ready > 0) then cwMarket.silverButton:SetEnable(1); end;
 	if (counters.items.ready > 0) then cwMarket.itemButton:SetEnable(1); end;
-
 end
 -- ======================================================
 --	LOADER
@@ -116,16 +152,12 @@ local isLoaded = false;
 
 function CWMARKET_ON_INIT()
 	if not isLoaded then
-		-- checking dependences
-		if (not cwAPI) then
-			ui.SysMsg('[cwMarket] requires cwAPI to run.');
-			return false;
-		end
-		-- executing onload
-		if (not cwMarket.data) then cwMarket.data = {}; end
-
 		cwMarket.createRetrieveButtons();
 		cwAPI.events.on('ON_CABINET_ITEM_LIST',cwMarket.cabinetItemList,1);	
+
+		cwAPI.events.on('MARGET_FIND_PAGE',cwMarket.marketFindPage,1);		
+		cwAPI.events.on('MARKET_PAGE_SELECT_PREV',cwMarket.pageSelectPrev,0);
+		cwAPI.events.on('MARKET_PAGE_SELECT_NEXT',cwMarket.pageSelectNext,0);
 		cwMarket.cabinetItemList();
 		
 		isLoaded = true;		
