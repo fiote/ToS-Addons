@@ -34,8 +34,8 @@
 		"name": "cwMarket",
 		"file": "cwmarket",
 		"extension": "ipf",
-		"fileVersion": "v1.0.2",
-		"releaseTag": "market-pagination",
+		"fileVersion": "v1.0.3",
+		"releaseTag": "fix-inspect",
 		"unicode": "🐻",
 		"description": "cwMarket add 2 buttons to your cabinet window, making it possible to retrieve all items or all silver with one click. It also fixed the problem when clicking the 'next' button on the market pagination.",
 		"tags": [

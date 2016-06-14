@@ -1,5 +1,4 @@
 local cwAPI = require('cwapi');
-local inspect = require('inspect');
 
 local cwMarket = {};
 cwMarket.pageNow = nil;
