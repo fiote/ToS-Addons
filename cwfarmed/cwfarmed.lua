@@ -139,7 +139,7 @@ local function inventoryUpdate(actor,evName,itemID,itemQty)
 		if (options.show.items) then
 			local cls = GetClassByType('Item',itemID);
 			local txt = '{@st41b}{img '..cls.Icon..' 24 24}{/} ['..cls.Name..']';
-			if (cxScanner) then txt = txt .. ' ' ..cxScanner.cwFarmedCall(itemID); end
+			if (marktioneer) then txt = txt .. ' ' ..marktioneer.cwFarmedCall(itemID); end
 			log(txt);
 		end
 	end
