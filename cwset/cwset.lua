@@ -1,7 +1,7 @@
 local cwAPI = require("cwapi");
 local acutil = require('acutil');
 
-local cwSet = {};
+cwSet = {};
 local log = cwAPI.util.log;
 
 -- ======================================================
