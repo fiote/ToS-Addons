@@ -96,10 +96,9 @@
 		"unicode": "🐻",
 		"description": "Let you scan the whole market (or your current inventory) at once, displaying the lowest 3 prices on the item tooltip.",
 		"tags": [
+			"market",
 			"inventory",
-			"gear",
-			"set",
-			"swap"
+			"tooltip"
 		]
 	}
 ]
