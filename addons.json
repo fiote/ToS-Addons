@@ -17,8 +17,8 @@
 		"name": "cwFarmed",
 		"file": "cwfarmed",
 		"extension": "ipf",
-		"fileVersion": "v1.0.2",
-		"releaseTag": "rebirth",
+		"fileVersion": "v1.0.3",
+		"releaseTag": "marketd",
 		"unicode": "🐻",
 		"description": "cwFarmed allows you to easily see what's really being farmed while you grind your way through the game.",
 		"tags": [
@@ -63,8 +63,8 @@
 		"name": "cwSet",
 		"file": "cwset",
 		"extension": "ipf",
-		"fileVersion": "v1.0.1",
-		"releaseTag": "rebirth",
+		"fileVersion": "v1.0.2",
+		"releaseTag": "marketd",
 		"unicode": "🐻",
 		"description": "cwSet allows you to store an infinite number of gear 'sets', so you can easily switch between them.",
 		"tags": [
@@ -85,6 +85,21 @@
 		"tags": [
 			"screen",
 			"shake"
+		]
+	},
+	{
+		"name": "Marktioneer",
+		"file": "marktioneer",
+		"extension": "ipf",
+		"fileVersion": "v1.0.0",
+		"releaseTag": "marketd",
+		"unicode": "🐻",
+		"description": "Let you scan the whole market (or your current inventory) at once, displaying the lowest 3 prices on the item tooltip.",
+		"tags": [
+			"inventory",
+			"gear",
+			"set",
+			"swap"
 		]
 	}
 ]
