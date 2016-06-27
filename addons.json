@@ -94,7 +94,7 @@
 		"fileVersion": "v1.0.0",
 		"releaseTag": "marketd",
 		"unicode": "🐻",
-		"description": "Let you scan the whole market (or your current inventory) at once, displaying the lowest 3 prices on the item tooltip.",
+		"description": "Let you scan the whole market (or your current inventory) at once, displaying the lowest 3 prices on the item tooltip. This addon, of course, requires you to be right next to the market npc, with the market window open.",
 		"tags": [
 			"market",
 			"inventory",
