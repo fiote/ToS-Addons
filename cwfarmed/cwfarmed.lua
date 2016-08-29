@@ -354,6 +354,8 @@ local function checkCommand(words)
 		local msgcmd = msgcmd .. '/farmed pet [on/off]{nl}'..'Show or hide pet messages (now: '..flagpet..').{nl}'..'-----------{nl}';
 		local msgcmd = msgcmd .. '/farmed petmin [value]{nl}'..'Only show pet messages when x% is obtained (now: '..alertpet..').{nl}'..'-----------{nl}';
 
+		local msgcmd = msgcmd .. '/farmed all [on/off]{nl}'..'Show or hide all messages.{nl}'..'-----------{nl}';
+
 		return log(msgtitle..msgcmd);
 	end
 
