@@ -287,6 +287,27 @@ local function checkCommand(words)
 		end
 	end
 
+	if (cmd == 'all') then
+		local dsflag = table.remove(words,1);
+		local msgflag = 'Show [items, silver, xp, xpjob, pet] set to ['..dsflag..'].';
+		local set = true;
+		if (dsflag == 'on') then
+			set = true;
+		elseif (dsflag == 'off') then
+			set = false;
+		else
+			return ui.MsgBox(msgtitle.."The value should be 'on' or 'off' (without quotes). Not '"..getvarvalue(dsflag).."' as informed.");
+		end
+		
+		options.show['items'] = set;
+		options.show['silver'] = set;
+		options.show['xp'] = set;
+		options.show['xpjob'] = set;
+		options.show['pet'] = set;
+		cwAPI.json.save(options,'cwfarmed');
+		return ui.MsgBox(msgtitle..msgflag);
+	end
+
 	if (cmd == 'silvermin' or cmd == 'xpmin' or cmd == 'xpjobmin' or cmd == 'petmin') then
 		local newvlr = table.remove(words,1);
 		local atr = string.gsub(cmd,'min','');
@@ -332,6 +353,8 @@ local function checkCommand(words)
 
 		local msgcmd = msgcmd .. '/farmed pet [on/off]{nl}'..'Show or hide pet messages (now: '..flagpet..').{nl}'..'-----------{nl}';
 		local msgcmd = msgcmd .. '/farmed petmin [value]{nl}'..'Only show pet messages when x% is obtained (now: '..alertpet..').{nl}'..'-----------{nl}';
+
+		local msgcmd = msgcmd .. '/farmed all [on/off]{nl}'..'Show or hide all messages.{nl}'..'-----------{nl}';
 
 		return log(msgtitle..msgcmd);
 	end
