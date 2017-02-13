@@ -46,7 +46,7 @@ function cwSet.actions.dochanges()
 		end
 		if (change.type == 'unequip') then 
 			log('Unequipping '..change.spot..'...');
-			item.UnEquip(change.guid);
+			item.UnEquip(item.GetEquipSpotNum(change.spot));
 		end
 	else
 		if (cwSet.equipping) then
@@ -82,7 +82,7 @@ function cwSet.actions.load(setname)
 			end
 		else
 			local invItem = session.GetInvItemByGuid(itemGuid);
-			if (invItem ~= nil) then
+			if (invItem ~= nil and 0 < GetIES(invItem:GetObject()).Dur) then
 				local change = {};
 				change.type = 'equip';
 				change.spot = spotName;
