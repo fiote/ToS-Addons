@@ -1,3 +1,6 @@
+# IMPORTANT #
+Since I stopped playing ToS (around jun/2016) I no longer work on those addons. If you want to PR something, feel free to (I won't be able to test it, tho). If you want continue them, you have my blessing to do so. Just fork it and start your own addon legacy!
+
 ## Download ##
 
 You should use the [Addon Manager](https://github.com/Excrulon/Tree-of-Savior-Addon-Manager/releases/latest) to download my addons! All the cool kids are using it!
@@ -13,10 +16,6 @@ Because of that, I'll no longer keep cxAnywhere available. If you ever find your
 ## Tree of Savior Lua Mods - cwLibrary ##
 
 Here you can find all the addons I've created. Feel free to use my cwAPI to create yours too! Ask me if you need help.
-
-Also, please check my database website. It's growing! http://tosdb.org/
-
-Have any question or suggestion about the addons or the website? Hit me at http://discordapp.com (user fiote#3304).
 
 ## Addons Available
 
